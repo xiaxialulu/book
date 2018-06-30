@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-9-25 20:52:39 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+   <class name="entity.Book" table="book">
+   		<id name="id" column="id"><!--column代表表的列名-->
+   			<generator class="native"></generator><!--native代表主键自动增长-->
+   		</id>
+   		<property name="name" column="name" />
+   		<property name="type" column="type" />
+	    <property name="autho" column="autho" />
+	    <property name="press" column="press" />
+	    <property name="intro" column="intro" />
+   </class>
+</hibernate-mapping>
